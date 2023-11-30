@@ -11,9 +11,10 @@ Documentation, instructions, references for the mmic-architecture-repository.
 ### 0. Prerequisites
 
 You will need:
- - a [github](https://github.com). account
+ - a [github](https://github.com) account
  - access to the [Digital Membership Architecture Repository](https://github.com/mmic-collaboration/mmic-architecture-repository-docs)
- - access to the Digital Membership Monday board for managing Sprints: 
+ - Archi tool + collaboration plugin [set-up on your machine](https://github.com/mmic-collaboration/mmic-architecture-repository-docs/blob/development/how-to-setup-archi-with-collab-mac.md)
+ - access to the Digital Membership Monday board for managing backlog through the sprints: 
 https://team-cpi.monday.com/boards/4183821556/views/114587146
 
 ### 1. Setup your local environment
