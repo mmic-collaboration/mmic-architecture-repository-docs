@@ -73,8 +73,8 @@ The final step is to create a pull request so your change can be reviewed by the
 ## Where to get More Information
 
  - [Digital Membership Architecture Repository](https://github.com/mmic-collaboration/mmic-architecture-repository-docs)
- - TOGAF Method
- - Archi
+ - [TOGAF Method](https://pubs.opengroup.org/togaf-standard/)
+ - [Archi](https://www.archimatetool.com/download/)
  - [MMIC Digital Membership Sharepoint](https://cpiit.sharepoint.com/sites/MMICDigitalMembership-External/Shared%20Documents)
 
 
