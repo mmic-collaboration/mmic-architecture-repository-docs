@@ -2,25 +2,27 @@
 
 Here we show the end to end flow of sensor events from the source sensor on the manufacturing equipment 
 
-  ![archi collab config](images/realtime-release-e2e-dataflow.md "End-to-end sensor data flow")
+![archi collab config](images/Realtime-release-e2e.0.5-opc-events.jpg "End-to-end sensor data flow")
 
-  <br>
-  <br>
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-  <br>
-
-| Stage->   | Sensor | Sensor Broker | Process Broker (Edge) | Data-lake Curated (Cloud) | Data-lake Harmonisec (Cloud) |
-| --------  | ------ | -------- | ------- | ------- |
+| Stage=>  | Sensor | Sensor Broker | Process Broker (Edge) | Data-lake Curated (Cloud) | Data-lake Harmonisec (Cloud) |
+| --------:| :------: | :------: | :------: | :------: | :------: |
 | Domain    | (raw)  | PLANT  | PROCESS    |PROCESS   |(harmonised)|
 | CDM       | NA     | [PLANT CDM](https://github.com/mmic-collaboration/plant-domain-model)|[PROCESS CDM](https://github.com/mmic-collaboration/process-domain-model)|[PROCESS CDM](https://github.com/mmic-collaboration/process-domain-model)|(harmonised TBD)|
-| LDM       | TBD    |[PLANT LDM](https://github.com/mmic-collaboration/plant-domain-model/blob/development/model/Graphics/PLANT-Domain-LDM.png)|[PROCESS LDM](https://github.com/mmic-collaboration/process-domain-model/blob/development/model/Graphics/PROCESS-Domain-LDM.png)|[PROCESS LDM](https://github.com/mmic-collaboration/process-domain-model/blob/development/model/Graphics/PROCESS-Domain-LDM.png)|(harmonised LDM TBD)|
-| PDM       | TBD    | [How to setup PAT Authentication for Git](how-to-setup-pat-authentication-for-git.md)  | PROCESS    |PROCESS   |(harmonised)|
-| Sample    | TBD    | TBD  | TBD    | TBD   |TBD|
+| LDM       | NA    |[PLANT LDM](https://github.com/mmic-collaboration/plant-domain-model/blob/development/model/Graphics/PLANT-Domain-LDM.png)|[PROCESS LDM](https://github.com/mmic-collaboration/process-domain-model/blob/development/model/Graphics/PROCESS-Domain-LDM.png)|[PROCESS LDM](https://github.com/mmic-collaboration/process-domain-model/blob/development/model/Graphics/PROCESS-Domain-LDM.png)|(harmonised LDM TBD)|
+| PDM       | TBD    | [PLANT CDM (OpenAPI)](https://github.com/mmic-collaboration/plant-domain-model/blob/development/model/OpenAPI/PLANT-Domain-OpenAPI.json)  | [PROCESS CDM (OpenAPI)](https://github.com/mmic-collaboration/process-domain-model/blob/development/model/OpenAPI/Process-Domain-OpenAPI.json)    |[PROCESS CDM (DeltaLake)](https://github.com/mmic-collaboration/process-domain-model/blob/development/model/DeltaLake/Process-Domain-DeltaLake.json)   |(harmonised)|
+| Sample    | TBD    | [Alarm Codes Sample](https://github.com/mmic-collaboration/plant-domain-model/blob/development/samples/Alarms-0.3.4-Sample200124.json) | TBD    | TBD   |TBD|
 
+## TO-DO
+1. Get representation of raw sensor data (sensor PDM sample)
+2. Get schema of the raw sensor data (if its available) 
 
-## Code
+## Code 
+
+### Domain Model Repositories
+
+[PLANT Domain](https://github.com/mmic-collaboration/plant-domain-model/)
+[PROCESS Domain](https://github.com/mmic-collaboration/process-domain-model/)
+
+### Architecture Repository
  - HTTPS: https://github.com/mmic-collaboration/mmic-architecture-repository.git
  - SSH: git@github.com:mmic-collaboration/mmic-architecture-repository.git
