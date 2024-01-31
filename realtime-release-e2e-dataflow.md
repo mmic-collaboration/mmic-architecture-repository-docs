@@ -4,6 +4,7 @@ Here we show the end to end flow of sensor events from the source sensor on the 
 
 ![archi collab config](images/Realtime-release-e2e.0.5-opc-events.jpg "End-to-end sensor data flow")
 
+
 | Stage=>  | Sensor | Sensor Broker | Process Broker (Edge) | Data-lake Curated (Cloud) | Data-lake Harmonisec (Cloud) |
 | --------:| :------: | :------: | :------: | :------: | :------: |
 | Domain    | (raw)  | PLANT  | PROCESS    |PROCESS   |(harmonised)|
